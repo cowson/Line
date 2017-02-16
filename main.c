@@ -10,15 +10,16 @@ int main() {
 
   screen s;
   color c;
- 
-  
+
+
   c.red = 0;
   c.green = MAX_COLOR;
   c.blue = 0;
-  
+
   clear_screen(s);
 
-
+  draw_line( 0,0, 500,500, s,c );
+  draw_line( 0,4, 500,90, s,c);
   display(s);
   save_extension(s, "lines.png");
-}  
+}
